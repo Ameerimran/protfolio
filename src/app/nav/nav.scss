@@ -1,3 +1,22 @@
-.bgc{
-    background-color: black;
+.bgc {
+  background-color: #0a0a0d;
+  border-bottom: 1px solid rgba(255, 31, 61, 0.4);
+}
+
+.navbar-expand-md {
+  background-color: transparent;
+}
+
+.nav-link {
+  color: #e9e9e9;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ff3d57 !important;
+}
+
+.nav-item {
+  margin: 0 0.5rem;
 }

@@ -12,6 +12,7 @@ export class Tags {
     static readonly ASPNET = new Tags ('ASP.NET', 'blue')
     static readonly JAVA = new Tags ('Java', 'red');
     static readonly PYTHON = new Tags ('Python', 'yellow');
+    static readonly SQL = new Tags ('SQL', 'brown');
 
 
     private constructor(public readonly key: string, public readonly color: string) {

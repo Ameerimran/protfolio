@@ -1,1 +1,35 @@
-<p>contact works!</p>
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-shell">
+      <div class="contact-header text-center">
+        <p class="eyebrow">Let’s Connect</p>
+        <h2>Contact Me</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card primary">
+          <div class="icon-wrap">
+            <span>✉</span>
+          </div>
+          <div class="info">
+            <p class="label">Email</p>
+            <a href="mailto:ameerimran28@gmail.com">{{ email }}</a>
+          </div>
+          <button class="copy-btn" type="button" (click)="copyEmail()">{{ copied ? 'Copied' : 'Copy' }}</button>
+        </div>
+
+        <div class="contact-card secondary">
+          <div class="icon-wrap linkedin-wrap">
+            <img src="assets/logo-linkedin.png" alt="LinkedIn" class="linkedin-logo" />
+          </div>
+          <div class="info">
+            <p class="label">LinkedIn</p>
+            <a [href]="linkedInUrl" target="_blank" rel="noopener noreferrer">
+              Muhamad Ameer
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

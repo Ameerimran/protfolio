@@ -5,3 +5,65 @@
 
 /* Importing Datepicker SCSS file. */
 @import "ngx-bootstrap/datepicker/bs-datepicker";
+
+:root {
+  --bg: #07070a;
+  --panel: #111217;
+  --panel-2: #1a1a1f;
+  --accent: #d90429;
+  --accent-strong: #ff1f3d;
+  --text: #f4f4f4;
+  --muted: #c7c7c7;
+  --border: rgba(217, 4, 41, 0.6);
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  background: radial-gradient(circle at top, #1a0d10 0%, #07070a 40%, #050507 100%);
+  min-height: 100vh;
+}
+
+app-root {
+  display: block;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, a, li, div {
+  color: var(--text);
+}
+
+.btn-primary {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--accent-strong) !important;
+  border-color: var(--accent-strong) !important;
+}
+
+.nav-link {
+  color: var(--muted) !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent-strong) !important;
+}
+
+.card {
+  background-color: var(--panel) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text) !important;
+}
+
+.card-footer {
+  background-color: var(--panel-2) !important;
+  border-top: 1px solid var(--border) !important;
+} 

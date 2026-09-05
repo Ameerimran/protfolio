@@ -18,7 +18,7 @@ export class Home implements OnInit {
     private titleService: Title,
     private projectsService: Projects,
   ) {
-    this.titleService.setTitle('Ameer Imran');
+    this.titleService.setTitle('home');
   }
 
   ngOnInit(): void {

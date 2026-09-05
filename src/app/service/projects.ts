@@ -74,4 +74,25 @@ export class Projects {
   getProjectsById(id: number): Project[] {
     return this.projects.filter((project) => project.id === id);
   }
+
+  getProjectsByFilter(filterTags: Tags[]): Project[] {
+    let filteredProjects: Project[] = [];
+
+    this.projects.forEach( function(project) {
+      let foundAll = true;
+
+      filterTags.forEach(function(filterTag) {
+        if (!project.tags.includes(filterTag) == false ) {
+          foundAll = false;
+        }
+      });
+
+      if (foundAll) {
+        filteredProjects.push(project);
+      }
+    });
+
+
+    return filteredProjects;
+  }
 }

@@ -1,4 +1,14 @@
-.jumbotron{
-    padding: 2rem 1rem;
-    background-color: red;
+.jumbotron {
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #0b0b0d 0%, #1a0d12 35%, #2b0d12 100%);
+  border-bottom: 2px solid rgba(255, 31, 61, 0.7);
+}
+
+.jumbotron h1 {
+  color: red;
+}
+
+.jumbotron .display-4 {
+  color: white;
+  font-weight: 700;
 }

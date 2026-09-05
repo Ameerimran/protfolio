@@ -1,1 +1,120 @@
-<p>resume works!</p>
+<div class="container text-center">
+    <button (click)="downloadResume()" class="btn btn-primary mb-5 shadow border">Download Resume</button>
+    <accordion>
+        <accordion-group [(isOpen)]="workOpen" [panelClass]="'resume-accordion'">
+            <div accordion-heading class="d-flex justify-content-between align-items-center w-100">
+                <span>Work Experience</span>
+                <span class="accordion-toggle-icon">{{ workOpen ? '▴' : '▾' }}</span>
+            </div>
+            <div class="text-start mt-3">
+                <div class="education-item">
+                    <img src="assets/riajati-logo.png" alt="Riajati SDN BHD" class="edu-logo" />
+                    <div>
+                        <h5 class="fw-bold mb-1">Internship Trainee</h5>
+                        <p class="mb-1"><strong>Riajati SDN BHD</strong></p>
+                        <p class="resume-date mb-0">October 2024 - April 2025</p>
+                    </div>
+                </div>
+
+                <ul class="ps-3 mb-4">
+                    <li>Completed internship placement at Riajati SDN BHD as part of hands-on industry exposure in software and IT-related work.</li>
+                    <li>Gained practical experience in working within a professional environment, collaborating with team members, and understanding operational workflow.</li>
+                    <li>Developed and strengthened technical, communication, and problem-solving skills through real workplace exposure.</li>
+                </ul>
+
+                <div class="education-item">
+                    <img src="assets/riajati-logo.png" alt="Riajati SDN BHD" class="edu-logo" />
+                    <div>
+                        <h5 class="fw-bold mb-1">Software Developer</h5>
+                        <p class="mb-1"><strong>Riajati SDN BHD</strong></p>
+                        <p class="resume-date mb-0">May 2025 - September 2026</p>
+                    </div>
+                </div>
+
+                <ul class="ps-3 mb-0">
+                    <li>Served as a software developer at Riajati SDN BHD, contributing to daily operational and technical responsibilities.</li>
+                    <li>Performed assigned tasks with focus on quality, efficiency, and professionalism in a corporate setting.</li>
+                    <li>Continued to expand technical capability, teamwork, and workplace adaptability while supporting company objectives.</li>
+                </ul>
+            </div>
+        </accordion-group>
+
+        <accordion-group [(isOpen)]="educationOpen" [panelClass]="'resume-accordion'">
+            <div accordion-heading class="d-flex justify-content-between align-items-center w-100">
+                <span>Education</span>
+                <span class="accordion-toggle-icon">{{ educationOpen ? '▴' : '▾' }}</span>
+            </div>
+            <div class="text-start mt-3">
+                <div class="education-item">
+                    <img src="assets/logo_sdal.jpg" alt="SK Doktor Abdul Latiff" class="edu-logo" />
+                    <div>
+                        <h5 class="fw-bold mb-1">Primary School</h5>
+                        <p class="mb-1"><strong>SK Doktor Abdul Latiff</strong></p>
+                        <p class="resume-date mb-0">2008 - 2013</p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <img src="assets/logo_sua.png" alt="SMK Ungku Aziz" class="edu-logo" />
+                    <div>
+                        <h5 class="fw-bold mb-1">Secondary School</h5>
+                        <p class="mb-1"><strong>SMK Ungku Aziz</strong></p>
+                        <p class="resume-date mb-0">2014 - 2018</p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <img src="assets/logo-kmm.webp" alt="Malacca Matriculation College" class="edu-logo" />
+                    <div>
+                        <h5 class="fw-bold mb-1">Pre-University</h5>
+                        <p class="mb-1"><strong>Malacca Matriculation College</strong></p>
+                        <p class="resume-date mb-0">2019 - 2021</p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <img src="assets/logo-unisza.webp" alt="Universiti Sultan Zainal Abidin" class="edu-logo" />
+                    <div>
+                        <h5 class="fw-bold mb-1">Bachelor Degree</h5>
+                        <p class="mb-1"><strong>Bachelor of Computer Science (Software Development) with Honours</strong></p>
+                        <p class="mb-1"><strong>Universiti Sultan Zainal Abidin</strong></p>
+                        <p class="resume-date mb-0">2021 - 2024</p>
+                    </div>
+                </div>
+            </div>
+        </accordion-group>
+
+        <accordion-group [(isOpen)]="skillsOpen" [panelClass]="'resume-accordion'">
+            <div accordion-heading class="d-flex justify-content-between align-items-center w-100">
+                <span>Skills</span>
+                <span class="accordion-toggle-icon">{{ skillsOpen ? '▴' : '▾' }}</span>
+            </div>
+            <div class="text-start mt-3">
+                <div class="skill-group">
+                    <h5 class="fw-bold mb-3">Programming Skills</h5>
+                    <div class="skill-badges">
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">PostgreSQL</span>
+                        <span class="skill-badge">Angular</span>
+                        <span class="skill-badge">Django</span>
+                        <span class="skill-badge">Nest.js</span>
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Rust</span>
+                    </div>
+                </div>
+
+                <div class="skill-group mt-4">
+                    <h5 class="fw-bold mb-3">Communication Skills</h5>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Malay</span>
+                        <span class="skill-badge">English</span>
+                    </div>
+                </div>
+            </div>
+        </accordion-group>
+
+        
+    </accordion>
+</div>
