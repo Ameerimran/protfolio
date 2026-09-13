@@ -20,7 +20,7 @@ export class Resume {
   downloadResume() {
     const link = this.renderer.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', 'assets/resume.pdf');
+    link.setAttribute('href', 'assets/Ameer_Imran_CV.pdf');
     link.setAttribute('download', 'Ameer_Imran_Resume.pdf');
     link.click();
     link.remove();
